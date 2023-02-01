@@ -1,0 +1,21 @@
+.listContainer {
+    margin: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.itemContainer {
+    background-color: grey;
+    width: 300px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.itemImage {
+    width: 200px;
+    height: 200px;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
