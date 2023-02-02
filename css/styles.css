@@ -1,3 +1,26 @@
+html {
+    background-color:#091a28;
+    color: gainsboro;
+}
+
+a {
+    text-decoration: none;
+    color: gainsboro;
+}
+
+.backButton {
+    text-decoration: underline;
+    font-size: 1.2rem;
+}
+
+h1 {
+    margin-left: 20px;
+}
+
+p {
+    font-size: 1.2rem;
+}
+
 .listContainer {
     margin: 20px;
     display: flex;
@@ -6,11 +29,12 @@
 }
 
 .itemContainer {
-    background-color: grey;
-    width: 300px;
+    background-color: #143049;
     padding: 10px;
+    width: 300px;
     display: flex;
     flex-direction: column;
+    align-items: center;
 }
 
 .itemImage {
