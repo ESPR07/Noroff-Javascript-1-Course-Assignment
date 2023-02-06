@@ -1,6 +1,18 @@
+@font-face {
+    src: url(/font/Triforce.ttf);
+    font-family: "Hylian";
+}
+
+@font-face {
+    src: url(/font/RocknRollOne-Regular.ttf);
+    font-family: "Wind-Waker";
+}
+
 html {
     background-color:#091a28;
     color: gainsboro;
+    font-family: 'Hylian', 'Courier New', Courier, monospace;
+    letter-spacing: 3px;
 }
 
 a {
@@ -14,18 +26,35 @@ a {
 }
 
 h1 {
-    margin-left: 20px;
+    text-align: center;
+    font-size: 3rem;
 }
 
 p {
-    font-size: 1.2rem;
+    font-family: 'Wind-Waker', 'Courier New', Courier, monospace;
+}
+
+ul {
+    display: flex;
+    list-style: none;
+    column-gap: 20px;
+    justify-content: center;
+    font-size: 1.3rem;
+}
+
+ul .active {
+    font-size: 2rem;
+    text-decoration: underline;
 }
 
 .listContainer {
     margin: 20px;
+    padding-top: 20px;
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
     gap: 30px;
+    border-top: solid 2px white;
 }
 
 .itemContainer {
@@ -42,4 +71,8 @@ p {
     height: 200px;
     background-size: contain;
     background-repeat: no-repeat;
+}
+
+.itemHeader {
+    text-align: center;
 }
