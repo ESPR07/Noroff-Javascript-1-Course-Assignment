@@ -1,10 +1,10 @@
-url = "https://botw-compendium.herokuapp.com/api/v2/category/equipment";
+categoryURL = "https://botw-compendium.herokuapp.com/api/v2/category/equipment";
 
 
 
 async function callAPI(){
     const container = document.querySelector(".listContainer");
-    const response = await fetch(url);
+    const response = await fetch(categoryURL);
     const result = await response.json();
     const apiArray = result.data;
 
