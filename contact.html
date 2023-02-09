@@ -9,10 +9,33 @@
     <title>Contact Us</title>
 </head>
 <body>
-    <h1>15 Random Equipments in the Hyrule Compedium</h1>
+    <h1>Get in touch with us about questions</h1>
     <ul class="navList">
         <li><a href="/index.html">Home</a></li>
         <li class="active"><a href="/contact.html">Contact</a></li>
     </ul>
+    <section class="contactContainer">
+        <div class="formContainer">
+            <form>
+                <label for="fullName">Full Name:</label>
+                <input type="text" id="fullName" name="fullName" placeholder="Your name" required>
+                <p class="formError" id="nameError">Please enter your name</p>
+                
+                <label for="email">Email Adress:</label>
+                <input type="email" id="email" name="email" placeholder="Your email adress" required>
+                <p class="formError" id="emailError">Please enter a valid email adress</p>
+                
+                <label for="subject">Subject:</label>
+                <input type="text" id="subject" name="subject" placeholder="What is your question about?" required>
+                <p class="formError" id="subjectError">Please enter a subject</p>
+                
+                <label for="textArea">Your Question:</label>
+                <textarea type="text" id="textArea" name="textArea" placeholder="Ask your question" required></textarea>
+                <p class="formError" id="textAreaError">Please enter your question</p>
+                
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+    </section>
 </body>
 </html>
