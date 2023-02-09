@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Contact us for further questions.">
+    <script defer src="/js/contact.js"></script>
     <link rel="stylesheet" href="/css/styles.css">
     <title>Contact Us</title>
 </head>
@@ -16,21 +17,21 @@
     </ul>
     <section class="contactContainer">
         <div class="formContainer">
-            <form>
+            <form class="contactForm">
                 <label for="fullName">Full Name:</label>
-                <input type="text" id="fullName" name="fullName" placeholder="Your name" required>
+                <input type="text" id="fullName" name="fullName" placeholder="Your name">
                 <p class="formError" id="nameError">Please enter your name</p>
                 
                 <label for="email">Email Adress:</label>
-                <input type="email" id="email" name="email" placeholder="Your email adress" required>
+                <input type="email" id="email" name="email" placeholder="Your email adress">
                 <p class="formError" id="emailError">Please enter a valid email adress</p>
                 
                 <label for="subject">Subject:</label>
-                <input type="text" id="subject" name="subject" placeholder="What is your question about?" required>
+                <input type="text" id="subject" name="subject" placeholder="What is your question about?">
                 <p class="formError" id="subjectError">Please enter a subject</p>
                 
                 <label for="textArea">Your Question:</label>
-                <textarea type="text" id="textArea" name="textArea" placeholder="Ask your question" required></textarea>
+                <textarea type="text" id="textArea" name="textArea" placeholder="Ask your question"></textarea>
                 <p class="formError" id="textAreaError">Please enter your question</p>
                 
                 <button type="submit">Submit</button>

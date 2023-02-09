@@ -1,6 +1,6 @@
 const entryURL = "https://botw-compendium.herokuapp.com/api/v2/entry/";
 
-const locationDetails = document.querySelector(".locationDetails");
+const locationList = document.querySelector(".locationList");
 const contentContainer = document.querySelector(".contentContainer");
 const detailsContainer = document.querySelector(".detailsContainer");
 const dynamicTitle = document.querySelector("title");
@@ -34,17 +34,16 @@ async function getEntry() {
 
     dynamicNav.innerHTML = correctedName;
 
-    locationDetails.innerHTML = `<h2>Common Locations</h2>
-                                    <ul class="locationList">
-                                    </ul>`
+    let locationLoop = equipmentInfo.common_locations;
 
-    const locationList = document.querySelector(".locationList");
-
-    const locationLoop = equipmentInfo.common_locations;
+    if(locationLoop === null) {
+        locationLoop = "";
+    }
 
     const apostropheLessImageURL = equipmentInfo.image.replace("'", "%27");
 
     for (i = 0; i < locationLoop.length; i++){
+
         locationList.innerHTML += `<li>${locationLoop[i]}</li>`
     }
 
