@@ -146,6 +146,7 @@ p {
 .formContainer {
     background-color: #143049;
     margin-inline: 20%;
+    border: solid 2px white;
 }
 
 form {
