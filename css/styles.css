@@ -30,11 +30,15 @@ h1 {
     font-size: 3rem;
 }
 
+h3 {
+    font-size: 3rem;
+}
+
 p {
     font-family: 'Wind-Waker', 'Courier New', Courier, monospace;
 }
 
-ul {
+.navList {
     display: flex;
     list-style: none;
     column-gap: 20px;
@@ -42,7 +46,12 @@ ul {
     font-size: 1.3rem;
 }
 
-ul .active {
+.navList li:not(:last-child) {
+    border-right: solid 2px white;
+    padding-right: 20px;
+}
+
+.navList .active {
     font-size: 2rem;
     text-decoration: underline;
 }
@@ -64,6 +73,7 @@ ul .active {
     display: flex;
     flex-direction: column;
     align-items: center;
+    border: solid 2px white;
 }
 
 .itemImage {
@@ -75,4 +85,56 @@ ul .active {
 
 .itemHeader {
     text-align: center;
+}
+
+.contentContainer {
+    display: flex;
+    flex: 1 1 auto;
+    gap: 20px;
+    border-top: solid 2px white;
+    padding-top: 20px;
+}
+
+.locationDetails {
+    border: solid 2px white;
+    padding: 10px;
+    max-height: 800px;
+    background-color: #143049;
+}
+
+.locationList li {
+    margin-bottom: 20px;
+    font-size: 1.3rem;
+}
+
+.detailsContainer {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #143049;
+    border: solid 2px white;
+}
+
+.statsList {
+    display: flex;
+    gap: 50px;
+    justify-content: center;
+    list-style: none;
+    padding: 0;
+    font-size: 1.5rem;
+    margin-top: 0;
+}
+
+.detailsImage {
+    width: 100%;
+    height: 400px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.equipmentDescription {
+    margin-inline: 5%;
+    font-size: 1.5rem;
 }

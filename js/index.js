@@ -31,7 +31,7 @@ async function callAPI(){
             a.classList.add('itemContainer');
             a.href = "/details.html?id=" + apiArray[i].id;
 
-            let h3 = document.createElement('h3');
+            let h3 = document.createElement('h2');
             h3.classList.add("itemHeader");
             h3.innerText = upperCaseName;
 
