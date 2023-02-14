@@ -1,9 +1,8 @@
 categoryURL = "https://botw-compendium.herokuapp.com/api/v2/category/equipment";
-
+const container = document.querySelector(".listContainer");
 
 
 async function callAPI(){
-    const container = document.querySelector(".listContainer");
     const response = await fetch(categoryURL);
     const result = await response.json();
     const apiArray = result.data;
@@ -60,5 +59,11 @@ async function callAPI(){
 
 }
 
+try {
+    callAPI();
+}
 
-callAPI();
+catch (error) {
+    container.innerHTML = `<p>Something went wrong!</p>`;
+    console.log("Error: ", error);
+} 
