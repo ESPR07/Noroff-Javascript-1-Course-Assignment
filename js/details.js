@@ -40,12 +40,12 @@ async function getEntry() {
         locationLoop = "";
     }
 
-    const apostropheLessImageURL = equipmentInfo.image.replace("'", "%27");
-
     for (i = 0; i < locationLoop.length; i++){
 
         locationList.innerHTML += `<li>${locationLoop[i]}</li>`
     }
+
+    const apostropheLessImageURL = equipmentInfo.image.replace("'", "%27");
 
     detailsContainer.innerHTML += `<h3>${correctedName}</h3>
                                     <div class="statsListContainer">
@@ -63,4 +63,11 @@ async function getEntry() {
     
 }
 
-getEntry();
+try {
+    getEntry();
+}
+
+catch (error) {
+    contentContainer.innerHTML = `<p>Something went wrong!`;
+    console.log(error);
+}

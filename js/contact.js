@@ -22,7 +22,7 @@ function emailCheck(email) {
     return patternMatch;
 }
 
-function valdiationCheck(){
+function valdiationCheck(event){
     event.preventDefault();
     
         if(lengthCheck(fullName.value, 0)){
