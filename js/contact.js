@@ -9,11 +9,17 @@ const subjectError = document.querySelector("#subjectError");
 const textAreaError = document.querySelector("#textAreaError");
 
 function lengthCheck(value, compareValue){
-    if(value.trim().length > compareValue){
-        return true;
-    }   else {
-        return false;
-    }
+    //Inefficient way of checking:
+    
+    // if(value.trim().length > compareValue){
+    //     return true;
+    // }   else {
+    //     return false;
+    // }
+
+    // Efficient way of checking the same thing:
+
+    return value.trim().length > compareValue;
 }
 
 function emailCheck(email) {

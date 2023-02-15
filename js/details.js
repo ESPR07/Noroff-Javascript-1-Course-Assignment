@@ -50,10 +50,8 @@ async function getEntry() {
     detailsContainer.innerHTML += `<h3>${correctedName}</h3>
                                     <div class="statsListContainer">
                                         <ul class="statsList">
-                                            <li>Attack:</li>
-                                            <li>${equipmentInfo.attack}</li>
-                                            <li>Defense:</li>
-                                            <li>${equipmentInfo.defense}</li>
+                                            <li><p>Attack: ${equipmentInfo.attack}</p></li>
+                                            <li><p>Defense: ${equipmentInfo.defense}</p></li>
                                         </ul>
                                     </div>
                                    <div class="detailsImage" style="background-image: url(${apostropheLessImageURL})"></div>
