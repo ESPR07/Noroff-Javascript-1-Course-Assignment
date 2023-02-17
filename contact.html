@@ -17,18 +17,23 @@
     </ul>
     <section class="contactContainer">
         <div class="formContainer">
-            <form class="contactForm">
+            <h4>Form was submitted!</h4>
+            <form class="contactForm" method="post" action="">
                 <label for="fullName">Full Name:</label>
                 <input type="text" id="fullName" name="fullName" placeholder="Your name">
-                <p class="formError" id="nameError">Please enter your name</p>
+                <p class="formError" id="nameError">Please enter your full name</p>
+
+                <label for="adress">Adress:<br><span>minimum 25 letters</span></label>
+                <input type="text" id="adress" name="adress" placeholder="Your Adress">
+                <p class="formError" id="adressError">Adress must be at least 25 letters</p>
                 
                 <label for="email">Email Adress:</label>
                 <input type="text" id="email" name="email" placeholder="Your email adress">
                 <p class="formError" id="emailError">Please enter a valid email adress</p>
                 
-                <label for="subject">Subject:</label>
+                <label for="subject">Subject: <br><span>minimum 10 letters</span></label>
                 <input type="text" id="subject" name="subject" placeholder="What is your question about?">
-                <p class="formError" id="subjectError">Please enter a subject</p>
+                <p class="formError" id="subjectError">Subject must be at least 10 letters</p>
                 
                 <label for="textArea">Your Question:</label>
                 <textarea type="text" id="textArea" name="textArea" placeholder="Ask your question"></textarea>

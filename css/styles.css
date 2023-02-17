@@ -34,8 +34,23 @@ h3 {
     font-size: 3rem;
 }
 
+h4 {
+    font-size: 2rem;
+    color: green;
+    text-align: center;
+    display: none;
+}
+
 p {
     font-family: 'Wind-Waker', 'Courier New', Courier, monospace;
+}
+
+label {
+    text-align: center;
+}
+
+span {
+    font-size: 1.3rem;
 }
 
 .navList {

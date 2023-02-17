@@ -22,8 +22,9 @@ async function callAPI(){
         //                             <p>Defense: ${apiArray[i].defense}</p>
         //                         </a>`
 
-        
-        // createElement method of doing the same thing I did over:
+        //////////////////////////////////////////////////////////////
+        // createElement method of doing the same thing I did above://
+        //////////////////////////////////////////////////////////////
 
         function createHTML(){
             let a = document.createElement('a');
